@@ -1,0 +1,159 @@
+$image: "/PROJECTS/todolist/images/assets/Beautiful_beach.jpg";
+
+
+
+body {
+    background-color: rgb(119, 148, 193);
+    background-image: url($image);
+  background-repeat: none;
+    margin: 0px 10px;
+  
+  color: white;
+    background-size: 100vw 100vh;
+    font-family: Arial, Helvetica, sans-serif;
+  }
+  #bold{
+    font-size: large;
+  }
+  .check {
+    background-color: white;
+    position: relative;
+    width: 9px;
+    height: 9px;
+    padding: 2px;
+    display: inline;
+    border-radius: 55%;
+    border: 2px solid rgb(79, 79, 79);
+  }
+  h1{
+    margin: 10px 0px;
+  }
+  p {
+    font-size: 15px;
+  
+    text-decoration: none;
+    display: inline;
+  }
+  object,img {
+      width: 25px;
+      height: 30px;
+  }
+  .open{
+    width: 30px;
+    position: relative;
+    top: 10px;
+    left: -7px;
+  }
+  #blur{
+    display: none;
+    top: -20px;
+    z-index: 1;
+    height: 100vh;
+    float: left;
+    position: fixed;
+    left: 0vh;
+    right: 0;
+    background: rgba(11, 11, 11, 0.8);
+    opacity: 1;
+    
+  }
+
+    .sideBar{
+    background-color: rgb(223, 223, 223);
+  width: 290px;
+  position: absolute;
+  z-index: 1;
+  height: 100%;
+  top: 0;
+  left: 0;
+  color: black;
+  padding: 0px 15px;
+ display: none;
+ animation-name: example;
+  animation-duration: .3s;
+  animation-timing-function: cubic-bezier(0.42, 0, 0, 1.04);
+
+}
+  input{
+    outline: none;
+    border: none;
+    border-bottom: 1px solid black;
+    border-radius: 3px;
+    padding: 8px;
+    font-size: 15px;
+    width: 95%;
+    
+    display: block;
+  } 
+  .search{
+    position: absolute;
+    left: 86%;
+    top: 90px;
+    width: 17px;
+    height: 20px; 
+    transform: rotate(89deg);
+ }
+
+  .icon{
+    width: 30px;
+    height: 20px;
+
+  }
+  
+  div{
+    margin: 20px 0px;
+    object{
+        position: relative;
+        top: 3px;
+        left: -4px;
+    }
+  }
+
+
+  .new{
+    padding: 10px;
+  }
+  .num{
+    position: absolute;
+    background-color:rgb(209 209 209);
+    padding: 3px 6px;
+    border-radius: 50%;
+    font-size: 11px;
+    right: 25px;
+  }
+  
+.decor{
+    border-bottom: 1px solid black;
+    width: 108%;
+    position: relative;
+    left: -13px;
+}
+  .side-footer{
+    border-top: 1px solid rgb(115, 115, 115);
+    bottom: -20px;
+    width: auto;
+    position: absolute;
+    right: 0px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    button{
+        background-color: rgb(223, 223, 223);
+        border: none;
+    } 
+    .new{
+ 
+}
+  } 
+   @keyframes example {
+    0%   {width: 0px; font-size: 0px;color: white;}
+   
+    100% { width: 280px;}
+  }
+  @media (prefers-color-scheme: dark) {
+  
+    body {
+      background: black;
+      color: #ddd;
+    }
+  }

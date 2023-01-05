@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/script.js" defer></script>
+    <title>Document</title>
+</head>
+
+<body>
+    <div class="grid_container">
+        
+        <button onclick="tic(0)" class="grid_item"></button>
+        <button onclick="tic(1)" class="grid_item border_decor"></button>
+        <button onclick="tic(2)" class="grid_item"></button>
+        <button onclick="tic(3)" class="grid_item decor"></button>
+        <button onclick="tic(4)" class="grid_item decor border_decor"></button>
+        <button onclick="tic(5)" class="grid_item decor"></button>
+        <button onclick="tic(6)" class="grid_item"></button>
+        <button onclick="tic(7)" class="grid_item border_decor"></button>
+        <button onclick="tic(8)" class="grid_item"></button>
+    </div>
+    <h1 id="play">Next player:X</h1>
+    <p class="game" onclick="Move(0)"></p>
+    <p class="game" onclick="Move(1)"></p>
+    <p class="game" onclick="Move(2)"></p>
+    <p class="game" onclick="Move(3)"></p>
+    <p class="game" onclick="Move(4)"></p>
+    <p class="game" onclick="Move(5)"></p>
+    <p class="game" onclick="Move(6)"></p>
+    <p class="game" onclick="Move(7)"></p>
+    <p class="game" onclick="Move(8)"></p>
+    <button onclick="reset()" id="reset">reset</button>
+</body>
+
+</html>

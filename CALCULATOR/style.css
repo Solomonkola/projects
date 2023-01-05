@@ -1,0 +1,96 @@
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
+
+body {
+    touch-action: manipulation;
+  background-color: rgb(39, 105, 155);
+}
+
+.output {
+  outline: none;
+  grid-column: 1 /-1;
+  background-color: rgba(88, 149, 223, 0.2);
+  text-align: right;
+  min-height: 140px;
+  word-wrap: break-word;
+  word-break: break-all;
+  border-radius: 10px 10px 0px 0px;
+}
+.operator{
+  background-color: rgb(154, 179, 199);
+}
+.number{
+   background-color: rgb(206, 205, 205);
+}
+.number:hover{
+  background-color:rgb(164, 170, 175);;
+}
+.operator:hover{
+  background-color: rgb(117, 146, 169);
+}
+button {
+ color: black;
+  font-size: 20px;
+  border-radius: 5px;
+  border: 1px solid rgb(153, 153, 153);
+  touch-action: manipulation;
+}
+
+h1,
+h2 {
+  text-align: right;
+
+  font-size: 40px;
+
+  padding-right: 15px;
+  margin: 15px 0px;
+}
+
+#result {
+  padding-top: 1px;
+}
+#copied{
+background-color: black;
+color: white;
+display: none;
+padding: 10px;
+border-radius: 2px;
+}
+#buttons {
+  align-content: center;
+}
+
+.grid-span {
+  grid-column: span 2;
+  background-color: rgb(113, 148, 185);
+}
+.grid-span:hover{
+  background-color: rgb(103, 129, 156);
+}
+
+.grid-container {
+  background-color: rgba(0, 0, 0,0.4);
+  position: absolute;
+  display: grid;
+  align-content: center;
+  min-height: 40vh;
+  grid-template-columns: repeat(4, 85px);
+  grid-template-rows: minmax(120px, auto) repeat(5, 80px);
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  border-radius: 10px;
+}
+.grid-item {
+  padding: 1px;
+}
+
+@media (min-width: 600px) {
+  button {
+    font-size: 25px;
+  }
+}

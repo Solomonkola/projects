@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>A SIMPLE CALCULATOR</title>
+    <script src="script.js" defer></script>
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body onkeypress="test(event)">
+    <div class="grid-container">
+        <div class="output" tabindex="1"  onkeydown="test()" onkeypress="backspace(event)" >
+            <div>
+                <h1 id="result"></h1>
+            </div>
+            <div onclick="copy()">
+                <h2 type="number" id="display" >0</h2>
+                <p id="copied">copied!</p>
+            </div>
+        </div>
+        <button id="per" class="grid-item operator" onclick="per()">%</button>
+        <button id="Ac" class="grid-item operator" onclick="ac()">AC</button>
+        <button class="grid-item operator" id="del" onclick="del.call(this)">C</button>
+        <button class="grid-item operator" type="button" onclick="add.call(this)">+</button>
+
+
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">1</button>
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">2</button>
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">3</button>
+        <button class="grid-item operator" type="button" onclick="minus.call(this)">-</button>
+
+
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">4</button>
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">5</button>
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">6</button>
+        <button class="grid-item operator" type="button" onclick="multiply.call(this)">×</button>
+
+
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">7</button>
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">8</button>
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">9</button>
+        <button class="grid-item operator" type="button" onclick="divide.call(this)">÷</button>
+
+
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">.</button>
+        <button class="grid-item number" type="button" onclick="btnclick.call(this)">0</button>
+        <button class="grid-span" type="button" onclick="equal.call(this)">=</button>
+    </div>
+
+</body>
+
+</html>

@@ -1,0 +1,250 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <meta name="description" content="Haven Spring Properties is a property">
+  <link rel="icon" href="assets/images/favicon2.jpg" />
+  <title>Haven Spring Properties</title>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <script src="assets/js/script.js" defer></script>
+</head>
+
+<body id="over_flow">
+  <header>
+    <!--logo start-->
+    <div class="image" onclick="toggle(2)">
+      <a href="Haven Spring Properties.html" target="_self">
+        <img src="assets/images/logo3.svg" alt="company logo">
+
+      </a>
+    </div>
+    <!--logo end-->
+    <!--navbar start-->
+    <div class="navbar">
+      <button type="button" class="open_button">
+        <div onclick="toggle(1)" id="test">
+          <img src="assets/images/bars-solid.svg" alt="company logo" id="toggle_buttn">
+        </div>
+
+      </button>
+      <div id="blur" onclick="toggle(2)"></div>
+      <div id="side_bar">
+        <div class="side_bar_header">
+          <p>Menu</p>
+          <button type="button" class="close_button toggle">
+            <img src="assets/close.svg" alt="" id="toggle_butto" id="close" onclick="toggle(2)" /></button>
+        </div>
+        <nav class="nav_links">
+          <ul id="toggle">
+            <li><a href="#home" class="home" onclick="toggle(2)">HOME</a></li>
+            <li><a href="#about_us" onclick="toggle(2)">ABOUT</a></li>
+            <li><a href="#services" onclick="toggle(2)">SERVICES</a></li>
+            <li><a href="properties.html" target="_blank">PROPERTIES</a></li>
+            <li><a href="#contact_us" onclick="toggle(2)">CONTACT</a></li>
+            <li><a href="calculator/calc.html" onclick="toggle(2)" target="_blank">MY CALCULATOR</a></li>
+          </ul>
+        </nav>
+
+        <div class="call_us"> <a href="tel:07025051999" class="phone">CALL US: 07025051999</a>
+        </div>
+      </div>
+    </div>
+    <!--navbar end-->
+  </header>
+  <main>
+    <!--welcome image start-->
+    <div class="slide_container">
+      <div id="mySlide" class="fade">
+        <div class="numbertext"></div>
+        <img src="assets/images/Welcome_image3.jpg" alt="welcome image" class="welcome_image" />
+        <div class="text"></div>
+      </div>
+      <div id="mySlide" class="fade">
+        <div id="numbertext"></div>
+        <img src="assets/images/welcome_image2.jpeg" alt="welcome image" class="welcome_image" />
+        <div class="text"></div>
+      </div>
+      <div id="mySlide" class="fade">
+        <div class="numbertext" style="color: rgb(210, 240, 244)"></div>
+        <img src="assets/images/Welcome_image.jpg" alt="welcome image" class="welcome_image" />
+        <div class="text"></div>
+      </div>
+
+      <div class="slide_button_container">
+        <button id="img1" class="slide_button" onclick="image(0)"></button>
+        <button id="img2" class="slide_button" onclick="image(1)"></button>
+        <button id="img3" class="slide_button" onclick="image(2)"></button>
+      </div>
+      <!--welcome image end-->
+      <div class="intro">
+
+        <p on>
+          Our focus at Haven Spring Properties Limited is to provide seamless
+          transitions between tenants without loss of time and revenue through
+          prompt enforcement, recovery, maintenance , and onboarding new
+          tenants.
+        </p>
+        <h1 class="why_us">Why Us?</h1>
+        <p>We understand the legal complexities of leasing and have gained invaluable knowledge over the years on how to
+          mitigate and navigate conflicts and delinquencies to protect your real estate investment.
+        </p>
+      </div>
+    </div>
+    <section id="services">
+      <h1>OUR SERVICES</h1>
+      <div class="flex_container">
+        <div class="money services_logo">
+          <img src="assets/images/money.svg" alt="" class="our_services" />
+          <p class="service">Rental collections</p>
+          <p>
+            We have an automated Collections and Disbursement system that takes
+            care of the revenue flow of the property.
+          </p>
+        </div>
+        <div class="align">
+          <div class="advertising services_logo">
+            <img src="assets/images/advertising.svg" alt="" class="our_services" />
+            <p class="service">Property advertising</p>
+            <p>
+              Haven spring properties limited will provide your vacant property
+              with continuous and quality exposure by using innovative marketing
+              and advertising techniques.
+            </p>
+          </div>
+          <div class="maintainance services_logo">
+            <img src="assets/images/maintainance.svg" alt="" class="our_services" />
+            <p class="service">Property maintainance</p>
+            <p>
+              We employ maintenance professionals to care for all properties
+              under our management. Our staff are knowledgeable on all aspects
+              of real estate property maintenance and supervision.
+            </p>
+          </div>
+          <div class="screening services_logo">
+            <img src="assets/images/screening.svg" alt="" class="our_services" />
+            <p class="service">Tenant screening and placement</p>
+            <p>
+              We have a thorough tenant qualification and selection process that
+              will allows us to fill your available spaces with qualified tenants
+              fast.
+            </p>
+          </div>
+        </div>
+        <div class="document services_logo">
+          <img src="assets/images/documents-logo.svg" alt="" class="our_services" />
+          <p class="service">Up-to-date reporting</p>
+          <p>
+            All operations are documented in user-friendly forms, and
+            documents are available for inspection by property owners and
+            their representatives
+          </p>
+        </div>
+      </div>
+    </section>
+    <section class="more_services">
+      <div class="renovations">
+        <img src="assets/images/construction.jpg" alt="">
+        <div class="more_service_text">
+          <p class="topic">Building construction</p>
+          <h2>Create beautiful new structures</h2>
+          <p>Our team of highly skilled and experienced engineers
+             will help you build your dream home or keep your exsisting properties looking new and attractive by restoring old
+            structures and fixing damaged parts</p>
+          <a href="our_services.html">learn more</a>
+        </div>
+      </div>
+      <div class="interior">
+        <div class="more_service_text">
+          <p class="topic">interior Decoration</p>
+          <h2>Adorn your home</h2>
+          <p>
+            Here at haven springs properties we create functional,
+            safe, and aesthetically pleasing spaces by assessing space
+            requirements, determining optimal furniture placement,
+            and selecting decorative items, all while adhering to
+            relevant blueprint, building code, and inspection
+            requirements.
+          </p>
+          <a href="our_services.html">learn more</a>
+        </div>
+        <img src="assets/images/interior2.jpg" alt="">
+      </div>
+    </section>
+  </main>
+
+  <footer>
+    <div class="about_us" id="about_us">
+      <h4>ABOUT US</h4>
+      <p>
+        Our company was first established in October 2009 by Olaifa Johnson
+        Muyiwa ANIVS. Since then, we have managed properties ranging from
+        terraces in units to flats in units, Hotels and others and have
+        received awards and recognitions for our work.
+      </p>
+      <div class="recognition">
+        <p id="sub_heading">Our awards and recognitions</p>
+        <p>
+          1. Romjoms productions and communication an award of excellent
+          Estate Manager of reputes. Date Received: [7th May, 2017]
+        </p>
+        <p>
+          We have worked for a number of real estate brokers and landlords in
+          both residential and commercial property. They would be pleased to
+          provide references:
+        </p>
+        <p>1. Name: glowing oak construction</p>
+        <p>2. Name: Assan touch property</p>
+        <p>3. Name: Admiralty Homes UK Limited</p>
+        <p id="sub_heading">Our license and permits</p>
+        <p>
+          Our staff and property managers are trained and licensed to operate
+          as real estate property managers, and we are blessed with licensed
+          and trained trade workers.
+        </p>
+        <p>
+          1. License Issuing Body: Nigerian institution of Estate Surveyors
+          and Valuers.
+        </p>
+        <p>2. License Issuing Body: Nigerian Institute of Management.</p>
+      </div>
+    </div>
+    <div class="contact_us" id="contact_us">
+      <h5>CONTACT US</h5>
+      <img src="assets/images/clock.svg" class="icon" alt="a clock icon">
+
+      <p> WORKING HOURS </p>
+      <p>Mon-Sat</p>
+      <P>8:00am-6:00pm</p>
+      <a href="https://goo.gl/maps/W3yc8mPhXy39FxKL7" target="_blank">
+        <img src="assets/images/location-dot-solid.svg" class="icon" alt="head office location" />
+        <p> Head Office</p>
+        <p> 12 D Olufemi Olatunji way Osapa London, Lagos. </p>
+      </a>
+
+      <a href="mailto:muyiwaolaifa78@gmail.com">
+        <img src="assets/images/envelope-solid.svg" class="icon" alt="email Address" />
+        <p>Email</p>
+        <p>muyiwaolaifa78@gmail.com</p>
+      </a>
+      <div>
+        <img src="assets/images/phone-solid.svg" class="icon" alt="phone number" />
+        <p> Phone</p>
+        <a href="tel:08086740059">
+
+          <p>08086740059</p>
+        </a>
+        <a href="tel:07025051999" class="phone">
+          <p>07025051999</p>
+        </a>
+      </div>
+    </div>
+    <div class="credits">
+      <p>Powered by:Haven spring Properties</p>
+    </div>
+  </footer>
+</body>
+
+</html>

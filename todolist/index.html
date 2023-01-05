@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="assets/css/style.css">
+    <script src="assets/js/index.js" defer></script>
+    <title>todo list</title>
+</head>
+
+<body>
+
+    <img src="bars-staggered-solid.svg" alt="" onclick="nav(1)">
+    <h1>My Day</h1>
+    <p id="bold">sorry its not ready yet 🥺</p><br>
+    <p id="day"></p>
+    <!-- <div class="todo" onclick="p(0)"><img class="check" src="check-solid.svg" alt="">
+        <p class="pa">something</p>
+    </div> -->
+     <div id="blur"></div>
+    <section class="sideBar">
+       
+        <img src="images/bars.svg" alt="" class="open" onclick="nav(0)">
+        <h2 id="greeting">Good Morning</h2>
+        
+        <input type="text" placeholder="Search">
+
+        <img src="images/magnifier-.svg" alt="" class="search">
+        <div class="my_day" onclick="todo(0)">
+            <object data="images/sun.svg" type="image/svg+xml" class="icon"></object>
+            <p>My Day</p>
+            <p class="day-num num">1</p>
+        </div>
+        <div class="important" onclick="todo(1)">
+            <object data="images/star.svg"  class="icon" type="image/svg+xml"></object>
+            <p>Important</p>
+            <p class="imp-num num">2</p>
+        </div>
+        <div class="planned" onclick="todo(2)">
+            <object data="images/calender.svg"  type="image/svg+xml" class="icon"></object> 
+            <p>Planned</p>
+            <p class="plan-num num">3</p>
+        </div>
+        <div class="task" onclick="todo(3)">
+           <object data="images/home.svg" type="image/svg+xml" class="icon"></object> 
+            <p>Tasks</p>
+            <p class="task-num num">4</p>
+        </div>
+        <div class="decor"></div>
+        <div class="side-footer">
+        <button class="new" onclick="newList(0)"><img src="plus-solid.svg" alt="" class="icon new-list">
+           <p>New list</p> </button>
+        <button class="list-group"><img src="images/calender.svg" alt=""></button>
+    </section></div>
+</body>
+
+</html>

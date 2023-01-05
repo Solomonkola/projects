@@ -1,0 +1,93 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-size: 15px;
+  font-family: "karla", sans-serif;
+  margin: 0px;
+}
+
+img {
+  max-width: 50px;
+}
+
+p,
+H1 {
+  color: white;
+  line-height: 20px;
+}
+
+section a {
+  background-color: white;
+  padding: 8px 15px;
+  margin: 25px 0px;
+  text-decoration: none;
+  border: 2px solid white;
+  border-radius: 25px;
+  display: block;
+  max-width: 120px;
+}
+
+section {
+  padding: 25px;
+}
+
+section#sedan {
+  background-color: hsl(31, 77%, 52%);
+}
+
+section#sedan a {
+  color: hsl(31, 77%, 52%);
+}
+
+section#sedan a:hover {
+  color: white;
+  background-color: hsl(31, 77%, 52%);
+}
+
+section#suvs {
+  background-color: hsl(184, 100%, 22%);
+}
+
+section#suvs a {
+  color: hsl(184, 100%, 22%);
+}
+
+section#suvs a:hover {
+  color: white;
+  background-color: hsl(184, 100%, 22%);
+}
+section#luxury {
+  background-color: hsl(179, 100%, 13%);
+}
+
+section#luxury a {
+  color: hsl(179, 100%, 13%);
+}
+
+section#luxury a:hover {
+  color: white;
+  background-color: hsl(179, 100%, 13%);
+}
+
+.attribution {
+  font-size: 13px;
+  text-align: center;
+}
+
+.attribution a {
+  color: hsl(228, 45%, 44%);
+}
+
+@media (min-width: 500px) {
+  .flex {
+    display: flexbox;
+    float: left;
+    width: 33.33%;
+    height: 400px;
+  }
+  section a {
+    margin-top: 70px;
+  }
+}
